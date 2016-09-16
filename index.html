@@ -3,9 +3,74 @@
   <head>
     <meta charset="utf-8">
     <title>CSS-Tricks Mock-Up</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/wide.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
+    <div class="navbar group">
+      <div id="logo">
+        <a href="#"><img src="images/css-tricks_logo.png" alt="CSS-Tricks Logo" /></a>
+      </div>
+      <div id="avatar">
+        <a href="#"><img src="images/img1.png" alt="Avatar" /></a>
+      </div>
+      <div class="search-group">
+        <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
+        <input id="search" type="search" name="search" value="" placeholder="e.g. flexbox">
+      </div>
+      <div class="menu">
+        <ul>
+          <a href="#"><li>Blog</li></a>
+          <a href="#"><li>Videos</li></a>
+          <a href="#"><li>Almanac</li></a>
+          <a href="#"><li>Snippets</li></a>
+          <a href="#"><li>Forums</li></a>
+          <a href="#"><li>Shop</li></a>
+          <a href="#"><li>Lodge</li></a>
+          <a href="#"><li>Jobs</li></a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="page-wrap">
+
+      <div class="main-column">
+        <div class="article-card">
+          <div class="date">
+              September 7, 2016
+          </div>
+          <a href="#"><h2>Make a Super Quick Little Slider to Play with Some Values</h2></a>
+          <span class="authored-by">By <a href="#">Chris Coyier</a></span>
+          <p>
+            It's not all that hard to change some values in CSS and refresh a browser window. Or play with those values in DevTools. Or have a <a href="#">style injection</a> setup, of which there are many ways.  But sometimes it's also nice to give yourself (or whoever else) a good ol' fashioned UI control to play with a value.
+          </p>
+          <p>
+            <a href="#">(more...)</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <div class="side-card">
+          <h4>&gt;_ Job Board</h4>
+          <p>
+            <a href="#"><strong>Trade Skips</strong> is hiring a Front End Developer</a>
+          </p>
+          <p>
+            <a href="#"><strong>Trade Skips</strong> is hiring a Front End Developer</a>
+          </p>
+          <p>
+            <a href="#"><strong>Trade Skips</strong> is hiring a Front End Developer</a>
+          </p>
+          <button type="button" name="more-jobs">See More Jobs</button>
+          <button type="button" name="post-job">Post a Job</button>
+        </div>
+        <p class="side-card">
+          A dignissim quis vestibulum vestibulum sed a a tempor curae id a senectus commodo arcu mauris tristique fames vulputate nullam vestibulum leo.
+        </p>
+      </div>
+    </div>
 
   </body>
 </html>
