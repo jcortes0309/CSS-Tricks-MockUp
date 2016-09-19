@@ -11,7 +11,7 @@ html {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.group:after {
+.clear:after {
   content: "";
   display: table;
   clear: both;
@@ -23,7 +23,7 @@ html {
 
 .navbar {
   width: 100%;
-  background-color: #1A1A1A;
+  background-color: #222;
 }
 
 .menu {
@@ -33,11 +33,14 @@ html {
   height: 60px;
 }
 
+.menu ul {
+  margin: 0;
+}
+
 .menu li {
   display: inline-block;
   color: white;
-  padding-left: 10px;
-  margin: auto;
+  padding: 21px 5px 21px 5px;
   font-size: 18px;
 }
 
@@ -73,10 +76,11 @@ html {
   float: right;
   height: 60px;
   width: 60px;
+  margin: 0 10px 0 5px;
 }
 
 .page-wrap {
-  margin: 200px 5% 100px 5%;
+  margin: 140px 5% 100px 5%;
   max-width: 1500px;
 }
 
@@ -99,7 +103,8 @@ html {
   border-radius: 10px;
   padding: 10%;
   font-family: monospace;
-  font-size: 15px;
+  font-size: 20px;
+  margin-bottom: 8%;
 }
 
 .right-column {
@@ -128,6 +133,29 @@ html {
 
 .side-card a {
   color: black;
+}
+
+.side-card img {
+  height: 100%;
+  width: 100%;
+}
+
+.side-card span {
+  color: #EE8C25;
+  font-weight: bold;
+}
+
+#MT-coupon {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 13px;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 button {

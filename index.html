@@ -5,10 +5,10 @@
     <title>CSS-Tricks Mock-Up</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="css/wide.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
-    <div class="navbar group">
+    <div class="navbar clear">
       <div id="logo">
         <a href="#"><img src="images/css-tricks_logo.png" alt="CSS-Tricks Logo" /></a>
       </div>
@@ -33,8 +33,10 @@
       </div>
     </div>
 
+    <!-- Page Wrapper - For Main Body -->
     <div class="page-wrap">
 
+      <!-- Main Content -->
       <div class="main-column">
         <div class="article-card">
           <div class="date">
@@ -49,8 +51,24 @@
             <a href="#">(more...)</a>
           </p>
         </div>
-      </div>
+        <div class="article-card">
+          <div class="date">
+              September 7, 2016
+          </div>
+          <a href="#"><h2>My New Favorite ES6 Toy: Destructed Objects as Parameters</h2></a>
+          <span class="authored-by">By <a href="#">Sarah Drasner</a></span>
+          <p>
+            Like a lot of other developers, I'm working through my continued education learning what I can about ES6. One of the ways I'm doing this is to attend workshops by smart people.  I went to Kyle Simpson's ES6: The Good Parts course and found myself particularly interested in the practical applications of a piece of ES6 I had previously not noticed: Destructed Objects as Parameters.
+          </p>
+          <p>
+            <a href="#">(more...)</a>
+          </p>
+        </div>
 
+      </div>
+      <!-- End Main Content -->
+
+      <!-- Right Column -->
       <div class="right-column">
         <div class="side-card">
           <h4>&gt;_ Job Board</h4>
@@ -58,19 +76,26 @@
             <a href="#"><strong>Trade Skips</strong> is hiring a Front End Developer</a>
           </p>
           <p>
-            <a href="#"><strong>Trade Skips</strong> is hiring a Front End Developer</a>
+            <a href="#"><strong>X-Team International</strong> is hiring a Front End Developer</a>
           </p>
           <p>
-            <a href="#"><strong>Trade Skips</strong> is hiring a Front End Developer</a>
+            <a href="#"><strong>The Working Party</strong> is hiring a Front End Developer</a>
           </p>
           <button type="button" name="more-jobs">See More Jobs</button>
           <button type="button" name="post-job">Post a Job</button>
         </div>
-        <p class="side-card">
-          A dignissim quis vestibulum vestibulum sed a a tempor curae id a senectus commodo arcu mauris tristique fames vulputate nullam vestibulum leo.
-        </p>
+        <div class="side-card">
+          <a href="#"><img src="images/img2.png" alt="Media Temple Logo" /></a>
+          <p>
+            CSS-Tricks uses and recommends Media Temple web hosting. Their exceptional service and support keep this site fast. Use coupon code <span>CSSTRICKS</span> to save 20% for the first year.
+          </p>
+          <button id="MT-coupon" type="button" name="MT-coupon">Save 20% on web hosting</button>
+        </div>
       </div>
+      <!-- End Right Column -->
+
     </div>
+    <!-- End Page Wrapper -->
 
   </body>
 </html>
