@@ -11,10 +11,15 @@ html {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.clear:after {
-  content: "";
-  display: table;
-  clear: both;
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:block;
+}
+
+.cf:after {
+    clear:both;
 }
 
 #logo {
@@ -30,7 +35,8 @@ html {
   float: left;
   margin: 0;
   padding: 0;
-  height: 60px;
+  height: 100%;
+  font-size: 18px;
 }
 
 .menu ul {
@@ -41,11 +47,62 @@ html {
   display: inline-block;
   color: white;
   padding: 21px 5px 21px 5px;
-  font-size: 18px;
 }
 
 .menu li:hover {
   background-color: #D08323;
+}
+
+/*
+Media Query:
+If the screen width is at most 865px, apply the following CCS rules
+*/
+
+@media (max-width: 865px) {
+  .main-column .article-card {
+    font-size: .90em;
+  }
+
+  .menu {
+    background-color: grey;
+    float: none;
+    font-size: 15px;
+    text-align: center;
+    height: 100%;
+  }
+
+  .menu ul {
+    padding: 0;
+  }
+
+  .menu li {
+    padding: 15px 5px 15px 5px;
+  }
+
+  #logo {
+    float: none;
+    text-align: center;
+  }
+
+  #avatar {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .right-column .side-card {
+    margin: 7%;
+  }
+}
+
+/*
+Media Query:
+If the screen width is at most 1035px, apply the following CCS rules
+*/
+@media (max-width: 1035px) {
+  .search-group {
+    display: none;
+  }
 }
 
 .search-group {
@@ -74,14 +131,39 @@ html {
 
 #avatar {
   float: right;
-  height: 60px;
-  width: 60px;
   margin: 0 10px 0 5px;
 }
 
 .page-wrap {
   margin: 140px 5% 100px 5%;
-  max-width: 1500px;
+}
+
+/*
+Media Query:
+If the screen width is at most 700px, apply the following CCS rules
+*/
+@media (max-width: 700px) {
+  .page-wrap {
+    margin: 100px 5% 100px 5%;
+  }
+
+  .page-wrap .main-column {
+    float: none;
+    width: 85%;
+    margin: auto;
+  }
+
+  .page-wrap .right-column {
+    float: none;
+    width: 85%;
+    margin: auto;
+  }
+
+  #avatar img {
+    height: 30px;
+    width: 30px;
+    margin-top: 50%;
+  }
 }
 
 .main-column {
