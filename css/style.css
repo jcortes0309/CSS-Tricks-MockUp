@@ -60,15 +60,28 @@ If the screen width is at most 865px, apply the following CCS rules
 
 @media (max-width: 865px) {
   .main-column .article-card {
-    font-size: .90em;
+    font-size: 20px;
   }
 
   .menu {
     background-color: grey;
     float: none;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     height: 100%;
+  }
+
+  .article-card .authored-by {
+    font-size: 18px;
+  }
+
+  .article-card .date {
+    margin-bottom: -10px;
+    font-size: 15px;
+  }
+
+  .right-column .side-card {
+    font-size: 20px;
   }
 
   .menu ul {
@@ -135,7 +148,7 @@ If the screen width is at most 1035px, apply the following CCS rules
 }
 
 .page-wrap {
-  margin: 140px 5% 100px 5%;
+  margin: 100px 5% 100px 5%;
 }
 
 /*
@@ -198,7 +211,6 @@ If the screen width is at most 700px, apply the following CCS rules
   font-size: 0.9em;
   background-color: #F5F5F5;
   border-radius: 10px;
-  clear: both;
   padding: 10%;
   margin: 0 0 15% 15%;
 }
@@ -281,4 +293,38 @@ a {
 
 p a {
   color: #3F91C9;
+}
+
+/*
+Media Query:
+If the screen width is at most 415px, apply the following CCS rules
+*/
+@media (max-width: 415px) {
+  h2 {
+    font-size: 25px;
+  }
+
+  .page-wrap {
+    margin: 10px 0 10px 0;
+  }
+
+  .page-wrap .main-column,
+  .page-wrap .right-column {
+    width: 95%;
+  }
+
+  .page-wrap .right-column {
+    margin-top: 30px;
+  }
+
+  .article-card {
+    padding: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .right-column .side-card {
+    padding: 15px;
+    margin: 10px 0;
+  }
 }
